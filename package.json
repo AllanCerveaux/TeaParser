@@ -1,0 +1,31 @@
+{
+  "name": "simple-template-parser",
+  "version": "0.0.1",
+  "description": "Template parser for cli command",
+  "main": "index.ts",
+  "author": "Callan @AllanCerveaux",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --watch src/** --ext ts,json --ignore src/**/*.spec.ts --exec tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "pino": "^8.1.0",
+    "pino-pretty": "^8.1.0"
+  }
+}
