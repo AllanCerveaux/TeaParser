@@ -1,5 +1,5 @@
 {
-  "name": "typarser",
+  "name": "teaparser",
   "version": "0.0.1",
   "description": "Template parser",
   "main": "src/main.ts",

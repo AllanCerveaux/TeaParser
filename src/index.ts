@@ -3,7 +3,7 @@ import Logger from './Logger'
 import Path from './Path'
 import { Template } from './Template'
 
-async function TParser(
+async function Tea(
   template_path: string,
   destination_path: string,
   data: Dic<string>
@@ -26,4 +26,4 @@ async function TParser(
   }
 }
 
-export default TParser
+export default Tea
