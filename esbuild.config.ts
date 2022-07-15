@@ -2,7 +2,6 @@ import { build } from 'esbuild'
 import { dtsPlugin } from 'esbuild-plugin-d.ts'
 ;
 (async () => {
-  console.log(process.env.NODE_ENV)
   const watcher = process.argv.includes('-w')
   const builder = await build({
     outdir: 'dist',
