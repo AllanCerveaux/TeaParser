@@ -7,12 +7,14 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon --watch src/**/* --ext ts,json --ignore src/**/*.spec.ts --exec ts-node src/index.ts",
-    "build": "tsc"
+    "build": "NODE_ENV=production ts-node ./esbuild.config.ts"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
+    "esbuild": "^0.14.49",
+    "esbuild-plugin-d.ts": "^1.1.0",
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
