@@ -1,5 +1,7 @@
-import { Stats, constants } from 'fs'
-import { access, copyFile, cp, lstat, mkdir } from 'fs/promises'
+import { access, cp, lstat, mkdir, readFile, writeFile } from 'fs/promises'
+import { basename, join } from 'path'
+
+import { Stats } from 'fs'
 
 /**
  * It returns an object with methods that can be used to access a file or directory
@@ -27,10 +29,15 @@ export default function Path(path: string) {
     },
     async copy(destination_path: string): Promise<void> {
       if (await this.isDirectory()) {
-        return cp(path, destination_path, { recursive: true })
+        return await cp(path, destination_path, { recursive: true })
       }
       if (await this.isFile()) {
-        return copyFile(path, destination_path, constants.COPYFILE_EXCL)
+        const file = await readFile(path, 'utf-8')
+        return await writeFile(
+          join(destination_path, basename(path)),
+          file,
+          'utf-8'
+        )
       }
     },
     async makeDir(): Promise<void> {

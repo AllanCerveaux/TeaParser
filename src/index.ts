@@ -12,12 +12,15 @@ async function TParser(
     const tpl_path = Path(template_path)
     const dest_path = Path(destination_path)
     await dest_path.accessTo()
-    if (await tpl_path.isDirectory()) {
-      await tpl_path.copy(dest_path.path).then(async () => {
+    await tpl_path
+      .copy(dest_path.path)
+      .then(async () => {
         const tpl = Template(dest_path.path)
         await tpl.parse(data)
       })
-    }
+      .catch((error) => {
+        throw Logger.error(error)
+      })
   } catch (error) {
     throw Logger.error(error)
   }
