@@ -1,7 +1,7 @@
 {
-  "name": "teaparser",
-  "version": "0.0.2",
-  "description": "Template parser",
+  "name": "tea-parser",
+  "version": "0.0.1",
+  "description": "Simple template parser",
   "repository": "https://github.com/oc-2021-2022/TParser",
   "author": "Callan @AllanCerveaux",
   "license": "MIT",

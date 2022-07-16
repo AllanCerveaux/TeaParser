@@ -10,9 +10,9 @@ A simple template parser.
 ## Install
 
 ```bash
-npm install --save teaparser
+npm install --save tea-parser
 # or
-yarn add --save teaparser
+yarn add --save tea-parser
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ yarn add --save teaparser
 With `Tparser` you can parse a file, a filename or each file in template folder.
 
 ```javascript
-import TParser from 'tparser'
+import { Tea } from 'tea-parser'
 
 Tea(template_file_path, destination_folder_path, data)
 // TParser('./template/index.html', './dest', {foo: 'foo', bar: 'bar})
@@ -32,7 +32,7 @@ Tea(template_file_path, destination_folder_path, data)
 ### Parse template folder
 
 ```javascript
-import TParser from 'tparser'
+import { Tea } from 'tea-parser'
 
 Tea(template_folder_path, destination_folder_path, data)
 // TParser('./template', './dest', {foo: 'foo', bar: 'bar})
