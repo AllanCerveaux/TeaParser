@@ -2,11 +2,14 @@
   "name": "teaparser",
   "version": "0.0.2",
   "description": "Template parser",
-  "main": "dist/index.js",
   "repository": "https://github.com/oc-2021-2022/TParser",
   "author": "Callan @AllanCerveaux",
   "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "source": "src/index.ts",
+  "type": "module",
   "engines": {
     "node": ">=10"
   },
@@ -18,7 +21,8 @@
   ],
   "scripts": {
     "start": "nodemon --watch src/**/* --ext ts,json --ignore src/**/*.spec.ts --exec ts-node src/index.ts",
-    "build": "NODE_ENV=production ts-node ./esbuild.config.ts"
+    "ts-types": " tsc --emitDeclarationOnly --outDir dist",
+    "build": "node ./esbuild.config.js && yarn ts-types"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
@@ -37,8 +41,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "esbuild-plugin-pino": "^1.2.1"
-  }
+  ]
 }

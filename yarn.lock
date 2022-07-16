@@ -582,11 +582,6 @@ esbuild-plugin-d.ts@^1.1.0:
     tmp "^0.2.1"
     tsup "^5.11.1"
 
-esbuild-plugin-pino@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/esbuild-plugin-pino/-/esbuild-plugin-pino-1.2.1.tgz#74d4c79616bd7380c752a6ed57d83cfd366bbfd1"
-  integrity sha512-/FPwFFc1pOEzG/Rtc76bKXJOn84xuQXavuVXsjA7Dxp0+3W+3frPfgjRZJW8srH8HXsLFZM7MMWDrtA0/C71UA==
-
 esbuild-sunos-64@0.14.49:
   version "0.14.49"
   resolved "https://registry.yarnpkg.com/esbuild-sunos-64/-/esbuild-sunos-64-0.14.49.tgz#47d042739365b61aa8ca642adb69534a8eef9f7a"
