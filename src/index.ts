@@ -1,9 +1,8 @@
 import { Dic } from './types'
-import Logger from './Logger'
 import Path from './Path'
 import { Template } from './Template'
 
-async function Tea(
+export async function Tea(
   template_path: string,
   destination_path: string,
   data: Dic<string>
@@ -19,11 +18,9 @@ async function Tea(
         await tpl.parse(data)
       })
       .catch((error) => {
-        throw Logger.error(error)
+        throw error
       })
   } catch (error) {
-    throw Logger.error(error)
+    throw error
   }
 }
-
-export default Tea
