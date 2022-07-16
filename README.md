@@ -1,4 +1,4 @@
-# typarser
+# TeaParser
 
 A simple template parser.
 

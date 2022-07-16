@@ -1,12 +1,13 @@
 {
   "name": "teaparser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Template parser",
   "main": "src/main.ts",
   "repository": "https://github.com/oc-2021-2022/TParser",
   "author": "Callan @AllanCerveaux",
   "license": "MIT",
-  "source": "src/index.tsx",
+  "module": "dist/index.js",
+  "source": "src/index.ts",
   "engines": {
     "node": ">=10"
   },
