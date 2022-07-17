@@ -25,7 +25,7 @@ With `Tparser` you can parse a file, a filename or each file in template folder.
 import { Tea } from 'tea-parser'
 
 Tea(template_file_path, destination_folder_path, data)
-// TParser('./template/index.html', './dest', {foo: 'foo', bar: 'bar})
+// Tea('./template/index.html', './dest', {foo: 'foo', bar: 'bar})
 ```
 
 
@@ -35,7 +35,7 @@ Tea(template_file_path, destination_folder_path, data)
 import { Tea } from 'tea-parser'
 
 Tea(template_folder_path, destination_folder_path, data)
-// TParser('./template', './dest', {foo: 'foo', bar: 'bar})
+// Tea('./template', './dest', {foo: 'foo', bar: 'bar})
 ```
 
 ### Template
