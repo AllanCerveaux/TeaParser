@@ -2,7 +2,7 @@
   "name": "tea-parser",
   "version": "0.1.0",
   "description": "Simple template parser",
-  "repository": "https://github.com/oc-2021-2022/TParser",
+  "repository": "https://github.com/allancerveaux/teaparser",
   "author": "Callan @AllanCerveaux",
   "license": "MIT",
   "main": "dist/index.js",

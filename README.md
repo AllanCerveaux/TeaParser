@@ -4,7 +4,7 @@ A simple template parser.
 
 > This is package in WIP
 
-[![NPM](https://img.shields.io/npm/v/teaparser.svg)](https://www.npmjs.com/package/teaparser) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/tea-parser.svg)](https://www.npmjs.com/package/teaparser) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
 ## Install
@@ -19,7 +19,7 @@ yarn add --save tea-parser
 
 ### Parse template file
 
-With `Tparser` you can parse a file, a filename or each file in template folder.
+With `tea-parser` you can parse a file, a filename or each file in template folder.
 
 ```javascript
 import { Tea } from 'tea-parser'
@@ -40,9 +40,7 @@ Tea(template_folder_path, destination_folder_path, data)
 
 ### Template
 
-To parse the template file, you write your template variable like this.
-
-> For example i use html file.
+To parse the template file, you write your template variable like this:
 
 ```html
 <!-- HTML Template File -->
@@ -62,6 +60,10 @@ To parse the template file, you write your template variable like this.
 To parse the filename, you can name it like this:
 
 `{{filename}}.[ext]`
+
+>example : 
+>
+>`{{template_name}}.json`
 
 ## License
 
